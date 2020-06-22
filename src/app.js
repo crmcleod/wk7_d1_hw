@@ -4,7 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue({
         el: "#app",
         data: {
-            items: ["Create million dollar app", "Sell app", "Buy remote island"]
+            todos: ["Create million dollar app", "Sell app", "Buy remote island"],
+            newToDo: ""
+        },
+        methods: {
+            saveNewToDo: function() {
+                this.todos.push(
+                    this.newToDo
+                );
+                this.newToDo="";
+            }
         }
     })
 })

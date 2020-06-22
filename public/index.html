@@ -12,10 +12,16 @@
 <body>
   <div id="app">
       <ul>
-          <li v-for="item in items">
+          <li v-for="item in todos">
               <span>{{item}}</span>
           </li>
       </ul>
+
+      <form v-on:submit.prevent="saveNewToDo">
+          <label for="new-todo">Add a new To Do</label>
+          <input id="new-todo" type="text" v-model="newToDo"/>
+          <input type="submit" value="Add item to to-do list" />
+      </form>
   </div>
 </body>
 </html>
