@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers:regular);
+
+#app {
+    font-family: "Bangers";
+    display: flexbox;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+input[type="submit"]{ font-family: "Bangers";
+padding: 1%;
+background-color: darkred;
+color: white;
+border-style: none;
+border-radius: 5%;}
+ul {
+    width: 40rem;
+}
+li{;
+    margin: 1%;
+    list-style: none;
+display: flexbox;
+padding: 2vw;}
+
+li.low{color: rgb(118, 171, 214);
+    background-color: rgba(186, 226, 198, 0.445)}
+li.high{color: rgb(255, 251, 250);
+background-color: mediumpurple;}
+li.high:before{content:"🚨    "}
+li.low:before{content:"🕶    "}

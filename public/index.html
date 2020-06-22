@@ -11,17 +11,24 @@
 </head>
 <body>
   <div id="app">
-      <ul>
-          <li v-for="item in todos">
-              <span>{{item}}</span>
-          </li>
-      </ul>
-
       <form v-on:submit.prevent="saveNewToDo">
+          
           <label for="new-todo">Add a new To Do</label>
           <input id="new-todo" type="text" v-model="newToDo"/>
+          <span id="priority">
+            <label for="low">Low</label>
+            <input  type="radio" name ="priority" id="low" v-model ="priority" value="low"/>
+            <label for="high">High</label>
+            <input type="radio" name="priority" id="high" v-model="priority" value="high"/>
+        </span>
           <input type="submit" value="Add item to to-do list" />
       </form>
+
+      <ul>
+        <li v-for="(item, index) in todos" v-bind:class="item.priority">
+            <span>{{item.task}}</span>
+        </li>
+    </ul>
   </div>
 </body>
 </html>
