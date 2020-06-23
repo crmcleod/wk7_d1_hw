@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers:regular);
-
-#app {
+body{background-image: url(./1W2A2929.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position-x: right;
+background-position-y: bottom;}
+#app {;
     font-family: "Bangers";
     display: flexbox;
     margin-left: 15%;
@@ -15,7 +19,7 @@ border-radius: 5%;}
 ul {
     width: 40rem;
 }
-li{;
+li{
     margin: 1%;
     list-style: none;
 display: flexbox;
