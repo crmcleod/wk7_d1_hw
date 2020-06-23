@@ -26,8 +26,8 @@ display: flexbox;
 padding: 2vw;}
 
 li.low{color: rgb(118, 171, 214);
-    background-color: rgba(186, 226, 198, 0.445)}
+    background-color: rgba(186, 226, 198, 0.952)}
 li.high{color: rgb(255, 251, 250);
-background-color: mediumpurple;}
+background-color: rgba(147, 112, 216, 0.801);}
 li.high:before{content:"🚨    "}
 li.low:before{content:"🕶    "}
